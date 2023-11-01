@@ -50,23 +50,41 @@ local Button = Aba1:CreateButton({
    end,
 })
 
- -- MISC 
  
- local Aba2 = Janela:CreateTab("Misc", 4483362458)
- local Section = Aba2:CreateSection("Miscellaneous:")
- local Button = Aba2:CreateButton({
+
+
+-- DEV 
+
+
+
+local Aba2 = Janela:CreateTab("DEV", 4483362458)
+local Section = Aba3:CreateSection("Scripts de desenvolvimento:")
+local Button = Aba3:CreateButton({
+   Name = "Dark Dex",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))()
+   end,
+})
+
+
+
+-- MISC 
+ 
+ local Aba3 = Janela:CreateTab("Misc", 4483362458)
+ local Section = Aba3:CreateSection("Miscellaneous:")
+ local Button = Aba3:CreateButton({
    Name = "Turn OFF GPU",
    Callback = function()
       game:GetService("RunService"):Set3dRenderingEnabled(false)
    end,
 })
-local Button = Aba2:CreateButton({
+local Button = Aba3:CreateButton({
    Name = "Turn OFF GPU",
    Callback = function()
       game:GetService("RunService"):Set3dRenderingEnabled(false)
    end,
 })
-local Button = Aba2:CreateButton({
+local Button = Aba3:CreateButton({
    Name = "Turn ON GPU",
    Callback = function()
       game:GetService("RunService"):Set3dRenderingEnabled(true)
