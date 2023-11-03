@@ -1,3 +1,5 @@
+--  loadstring(game:HttpGet('https://raw.githubusercontent.com/swttzz/swttzz-hub-rayfield/main/SWTTZZ%20HUB%20V1.2%20Rayfield%20UI.lua'))()
+
 getgenv().SecureMode = true
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
