@@ -1,92 +1,45 @@
--- SWTTZZ HUB V1.2 Rayfield UI
-
-
-
 getgenv().SecureMode = true
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-local Janela = Rayfield:CreateWindow({
-    Name = "swttzz hub",
-    LoadingTitle = "Script hub Loading!",
-    LoadingSubtitle = "by wtfdavi",
-    ConfigurationSaving = {
-       Enabled = true,
-       FolderName = nil, 
-       FileName = "swetzhubconfig1"
-    },
-    
-    KeySystem = true, 
-    KeySettings = {
-       Title = "Check key bellow!",
-       Subtitle = "wtfdavi on discord",
-       Note = "Talk with script owner to get access!!",
-       FileName = "swttzzkey",
-       SaveKey = true,
-       GrabKeyFromSite = false,
-       Key = {"159753","tkngplays"} 
-    }
- })
-
--- ANIME CHAMPIONS SCRIPTS
-
- local Aba1 = Janela:CreateTab("ACS", 4483362458)
- local Section = Aba1:CreateSection("Best scripts for Anime Champions Simulator")
- local Button = Aba1:CreateButton({
-   Name = "Magenta HUB",
+local Window = Rayfield:CreateWindow({
+   Name = "swtz hub",
+   LoadingTitle = "Abrindo interface...",
+   LoadingSubtitle = "by wtfdavi",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Big Hub"
+   },
+   KeySystem = true,
+   KeySettings = {
+      Title = "Swttzz Key System!!",
+      Subtitle = "Check Key:",
+      Note = "Entre em contato com o desenvolvedor para receber sua chave de acesso.",
+      FileName = "Key",
+      SaveKey = false,
+      GrabKeyFromSite = false,
+      Key = {"1"}
+   }
+})
+local Tab = Window:CreateTab("Script Principal", 4483362458);
+local Section = Tab:CreateSection("1000 + 1000?")
+local Button = Tab:CreateButton({
+   Name = "1500",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Odrexyo/Script/main/Loader.lua"))()
+      Rayfield:Destroy()
    end,
 })
- local Button = Aba1:CreateButton({
-   Name = "Sky HUB",
+local Button = Tab:CreateButton({
+   Name = "2000",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/diepedyt/bui/main/temporynewkeysystem.lua"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/swttzz/Roblox-Script-HUB/main/swtzhub.lua"))()
+      Rayfield:Destroy()
    end,
 })
-local Button = Aba1:CreateButton({
-   Name = "Banana HUB",
+local Button = Tab:CreateButton({
+   Name = "3000",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/SKOIXLL/RIVERHUB-SKYHUB/main/WL.lua'))();
-   end,
-})
-
- 
-
-
--- DEV 
-
-
-
-local Aba2 = Janela:CreateTab("DEV", 4483362458)
-local Section = Aba3:CreateSection("Scripts de desenvolvimento:")
-local Button = Aba3:CreateButton({
-   Name = "Dark Dex",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua"))()
-   end,
-})
-
-
-
--- MISC 
- 
- local Aba3 = Janela:CreateTab("Misc", 4483362458)
- local Section = Aba3:CreateSection("Miscellaneous:")
- local Button = Aba3:CreateButton({
-   Name = "Turn OFF GPU",
-   Callback = function()
-      game:GetService("RunService"):Set3dRenderingEnabled(false)
-   end,
-})
-local Button = Aba3:CreateButton({
-   Name = "Turn OFF GPU",
-   Callback = function()
-      game:GetService("RunService"):Set3dRenderingEnabled(false)
-   end,
-})
-local Button = Aba3:CreateButton({
-   Name = "Turn ON GPU",
-   Callback = function()
-      game:GetService("RunService"):Set3dRenderingEnabled(true)
+      Rayfield:Destroy()
    end,
 })
