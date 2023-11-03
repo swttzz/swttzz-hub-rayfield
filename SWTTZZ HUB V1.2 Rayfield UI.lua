@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
       Key = {"1"}
    }
 })
-local Tab = Window:CreateTab("Script Principal", 4483362458);
+local Tab = Window:CreateTab("Human Verification", 4483362458);
 local Section = Tab:CreateSection("1000 + 1000?")
 local Button = Tab:CreateButton({
    Name = "1500",
